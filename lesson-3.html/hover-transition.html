@@ -1,0 +1,68 @@
+<style>
+  .subscribe-button {    /* if we name this as button, all the buttons would have same design. So add a class to the buttons. If we are naming this as only button, there is no need of dot.*/
+    background-color: rgb(206, 37, 37);
+    color: white;
+    border: none;
+    height: 36px;  
+    width: 105px;
+    border-radius: 2px;
+    cursor: pointer;
+    margin-right: 8px;  
+  }
+  .subscribe-button:hover {
+    /* background-color: green;     it will change the colour of subscribe button to green when we hover over the button. :hover and :active are called pseudo-class and it basically adds extra styles in a certain situation. we can made the color of button become lighter by adding a property called opacity. It tells us how seethrough an HTML is. It takes value between 0 and 1. 1 means the element is completely normal and if we start to decrease from 1, the color starts to fade when we hover. */
+    opacity: 0.7;
+  }
+  .subscribe-button:active {
+    /* background-color: greenyellow;   this design works when the button is clicked.*/
+    opacity: 0.5;   /* when we click the button, it becomes even more lighter. */
+  }
+
+  .join-button {
+    background-color: white;
+    border-color: rgb(12, 129, 207);
+    border-style: solid;   /* if we don't use solid, the top and bottom border of the button will be contrastly shaded.*/
+    border-width: 1px;
+    height: 36px;  
+    width: 62px;
+    color: rgb(12, 129, 207);
+    border-radius: 2px;
+    cursor: pointer;
+    transition: background-color 1s,
+      color 1s ;   /* when we hover over the buttons, we can see that the change is very instant. So, in order to make the transition smoothly(slowly), we use transition. It's first value is opacity and second value is time in seconds. Now, it takes one second to perform the transition when we hover. But notice that the text 'JOIN' inside the button changes immediately. So, add that property also using a comma. Practically, we use 0.15s. */
+  }
+  .join-button:hover {
+    background-color: rgb(12, 129, 207);
+    color: white;
+    /* we may think of using the transition property here. but when we type transition property here, the transition will happen only during hovering and when we take the cursor out it will immediately turn to its original state. That's one common pitfall of transition property so, don't use here. */
+  }
+  .join-button:active {
+    opacity: 0.7;  
+  }
+
+  .tweet-button {
+    background-color: rgb(22, 157, 235);
+    border: none;
+    height: 36px;  
+    width: 72px;
+    color: white;
+    border-radius: 18px;
+    font-weight: bold;
+    font-size: 15px;
+    cursor: pointer;
+    margin-left: 8px;    
+    transition: box-shadow 0.15s;
+  }
+  .tweet-button:hover {
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.15);  /* here, the first value denotes horizontal position of shadow, second one denotes vertical position and third denotes the amount of blur of shadow. color can be any value not only black shadow. But for more realistic shadow, we have to use rgba where 'a' denotes the opacity. Next add transition.*/
+  }
+</style>
+<button class="subscribe-button">
+  SUBSCRIBE
+</button>
+<button class="join-button">
+  JOIN
+</button>
+<button class="tweet-button">
+  Tweet
+</button>

@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>QTrip</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <link rel="stylesheet" href="index-styles.css" />
+
+  <!-- TODO: CRIO_TASK_MODULE_LAYOUT -->
+  <!-- 1. Create a <link> to the first stylesheet needed for Bootstrap -->
+
+</head>
+
+<body>
+
+  <!-- TODO: CRIO_TASK_MODULE_LAYOUT -->
+
+   <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container-fluid">
+      <h3><a href="#" class="nav-link">QTrip</a></h3>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarItems"><span class="navbar-toggler-icon"></span></button>
+        <div class="collapse navbar-collapse justify-content-end" id="navbarItems">
+          <ul class="navbar-nav d-flex justify-content-end align-items-center w-100">
+            <li class="nav-item"><a href="#" class="nav-link">Home</a></li>
+            <li class="nav-item"><a href="adventure-index.html" class="nav-link">Explore</a></li>
+          </ul>
+        </div>
+    </div>
+   </nav> 
+
+  <!-- TODO: CRIO_TASK_MODULE_LAYOUT -->
+
+  <div class="hero-image d-flex justify-content-center align-items-center text-white text-center">
+    <div>
+      <h1>Welcome to QTrip</h1>
+      <p class="hero-subheading">Explore the world with fantastic places to venture around</p>
+      <input type="text" placeholder="Search a City" class="hero-input">
+    </div>
+  </div> 
+
+
+  <div class="container">
+    <!-- TODO: CRIO_TASK_MODULE_LAYOUT -->
+    <!--1. Create the grid like layout as required.
+        2. Column small 12 means there are 12 columns in a row by default and 12/12 = 1 which means there will be only one column in the page.
+        3. Use mb-4(margin-bottom-4) for adding margin inbetween the rows also. -->
+    <div class="row">
+      <div class="col-sm-12 col-md-6 col-lg-3 mb-4">
+        <a href="pages/adventures/">
+          <div class="tile">
+            <img src="bengaluru.jpg" alt="image broken" >
+            <div class="tile-text text-center">
+              <h5>bengaluru</h5>
+              <h6>100+ places</h6>
+            </div>
+          </div>
+        </a>
+      </div>
+      <div class="col-sm-12 col-md-6 col-lg-3 mb-4">
+        <a href="#">
+          <div class="tile">
+            <img src="kolkata.jpg" alt="image broken" >
+            <div class="tile-text text-center">
+              <h5>kolkata</h5>
+              <h6>100+ places</h6>
+            </div>
+          </div>
+        </a>
+      </div>
+      <div class="col-sm-12 col-md-6 col-lg-3 mb-4">
+        <a href="#">
+          <div class="tile">
+            <img src="goa.jpg" alt="image broken" >
+            <div class="tile-text text-center">
+              <h5>goa</h5>
+              <h6>100+ places</h6>
+            </div>
+          </div>
+        </a>
+      </div>
+      <div class="col-sm-12 col-md-6 col-lg-3 mb-4">
+        <a href="#">
+          <div class="tile">
+            <img src="mumbai.jpg" alt="image broken" >
+            <div class="tile-text text-center">
+              <h5>mumbai</h5>
+              <h6>100+ places</h6>
+            </div>
+          </div>
+        </a>
+      </div>
+      <div class="col-sm-12 col-md-6 col-lg-3 mb-4">
+        <a href="#">
+          <div class="tile">
+            <img src="singapore.jpg" alt="image broken" >
+            <div class="tile-text text-center">
+              <h5>singapore</h5>
+              <h6>100+ places</h6>
+            </div>
+          </div>
+        </a>
+      </div>
+      <div class="col-sm-12 col-md-6 col-lg-3 mb-4">
+        <a href="#">
+          <div class="tile">
+            <img src="dubai.jpg" alt="image broken" >
+            <div class="tile-text text-center">
+              <h5>dubai</h5>
+              <h6>100+ places</h6>
+            </div>
+          </div>
+        </a>
+      </div>
+      <div class="col-sm-12 col-md-6 col-lg-3 mb-4">
+        <a href="#">
+          <div class="tile">
+            <img src="malaysia.jpg" alt="image broken" >
+            <div class="tile-text text-center">
+              <h5>malaysia</h5>
+              <h6>100+ places</h6>
+            </div>
+          </div>
+        </a>
+      </div>
+      <div class="col-sm-12 col-md-6 col-lg-3 mb-4">
+        <a href="#">
+          <div class="tile">
+            <img src="paris.jpg" alt="image broken" >
+            <div class="tile-text text-center">
+              <h5>paris</h5>
+              <h6>100+ places</h6>
+            </div>
+          </div>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    <div class="container">© QTrip 2020</div>
+  </footer>
+
+  <!-- These are scripts needed for bootstrap to work -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</body>
+
+</html>

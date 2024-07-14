@@ -1,0 +1,56 @@
+<style>
+  .subscribe-button {    /* if we name this as button, all the buttons would have same design. So add a class to the buttons. If we are naming this as only button, there is no need of dot.*/
+    background-color: rgb(206, 37, 37);
+    color: white;
+    border: none;
+    height: 36px;  
+    width: 105px;
+    border-radius: 2px;
+    cursor: pointer;
+    margin-right: 8px;
+  }
+  .join-button {
+    background-color: white;
+    border-color: rgb(12, 129, 207);
+    border-style: solid;   /* if we don't use solid, the top and bottom border of the button will be contrastly shaded.*/
+    border-width: 1px;
+    height: 36px;  
+    width: 62px;
+    color: rgb(12, 129, 207);
+    border-radius: 2px;
+    cursor: pointer;
+  }
+  .tweet-button {
+    background-color: rgb(22, 157, 235);
+    border: none;
+    height: 36px;  
+    width: 72px;
+    color: white;
+    border-radius: 18px;
+    font-weight: bold;
+    font-size: 15px;
+    cursor: pointer;
+    margin-left: 8px;
+  }
+  /* .buttons {
+    display: inline;
+  } */
+   .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+   }
+</style>
+<div class="container">
+  <button class="subscribe-button">
+    SUBSCRIBE
+  </button>
+  <button class="join-button">
+    JOIN
+  </button>
+  <button class="tweet-button">
+    Tweet
+  </button>
+  <p class="buttons">Buttons</p>
+  <img src="https://media.licdn.com/dms/image/D5622AQG0IXRTCiQR-w/feedshare-shrink_800/0/1719817194296?e=1723680000&v=beta&t=U7j1q0liLpzjGRHx75imsAYwuYmIvJLU60lCZWGVMY0" alt="image" width="100" height="100"/>
+</div>

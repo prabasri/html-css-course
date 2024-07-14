@@ -1,0 +1,79 @@
+<style>
+  .subscribe-button {    
+    /* background-color: rgb(206, 37, 37); */
+    background-color: #cc0000;  /* this is another type of color code known as hex code. First two letters denote how much red, second two represents how much green and third two represents how much blue */
+    color: white;
+    border: none;
+/*  height: 36px;  
+    width: 105px; These two options are not good for defiing buttons. Because if the size of content is larger, the
+                  content will flow outside of the button border. So, we go for padding (adding space inside button). */
+    border-radius: 2px;
+    cursor: pointer;
+    margin-right: 8px;  
+    margin-left: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-right: 16px;
+    padding-left: 16px;
+    vertical-align: top;  /* When the buttons are not aligned properly i.e., because of horizontal alignment of text inside the buttons, use this property to align them same in the top. The buttons are not aligned according to the top border, but they are aligned with respect to the text of all three buttons. Because, in the beginning, the browsers are text-based. */
+  }
+  .subscribe-button:hover {
+    opacity: 0.7;
+  }
+  .subscribe-button:active {
+    opacity: 0.5;   
+  }
+
+  .join-button {
+    background-color: white;
+    border-color: rgb(12, 129, 207);
+    border-style: solid;   
+    border-width: 1px;
+    color: rgb(12, 129, 207);
+    border-radius: 2px;
+    cursor: pointer;
+    transition: background-color 1s,
+                color 1s ;   
+    padding-top: 9px;  /* Here, join button is slightly bigger than other and this is beccause of the border-width. so, reduce padding of top and bottom as 9px */
+    padding-bottom: 9px;
+    padding-right: 16px;
+    padding-left: 16px;
+  }
+  .join-button:hover {
+    background-color: rgb(12, 129, 207);
+    color: white;
+    
+  }
+  .join-button:active {
+    opacity: 0.7;  
+  }
+
+  .tweet-button {
+    background-color: rgb(22, 157, 235);
+    border: none;
+    color: white;
+    border-radius: 18px;
+    font-weight: bold;
+    font-size: 15px;
+    cursor: pointer;
+    margin-left: 8px;    
+    transition: box-shadow 0.15s;
+    padding-top: 9px;
+    padding-bottom: 9px;
+    padding-right: 16px;
+    padding-left: 16px;
+    vertical-align: top;
+  }
+  .tweet-button:hover {
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.15);  
+  }
+</style>
+<button class="subscribe-button">
+  SUBSCRIBE my channel
+</button>
+<button class="join-button">
+  JOIN
+</button>
+<button class="tweet-button">
+  Tweet
+</button>
